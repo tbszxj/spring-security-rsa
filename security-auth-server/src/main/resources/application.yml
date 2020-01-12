@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_security?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 970708
+mybatis:
+  type-aliases-package: com.tbszxj.entity
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    com.tbszxj: debug
+rsa:
+  key:
+    publicKeyFile: D:\auth-key\publicKey
+    privateKeyFile: D:\auth-key\privateKey
