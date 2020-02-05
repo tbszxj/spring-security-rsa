@@ -3,7 +3,6 @@ package com.tbszxj.filter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tbszxj.common.ApiResult;
 import com.tbszxj.config.RsaKeyProperties;
-import com.tbszxj.entity.SysRole;
 import com.tbszxj.entity.SysUser;
 import com.tbszxj.utils.JwtUtils;
 import org.slf4j.Logger;
@@ -13,8 +12,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
